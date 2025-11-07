@@ -1,0 +1,17 @@
+{
+  "name": "cypress-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:test": "cypress run --spec cypress/e2e/session31.cy.js",
+    "cy:test:edge": "cypress run --spec cypress/e2e/session31.cy.js --browser edge"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cypress": "^15.6.0"
+  }
+}
