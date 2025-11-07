@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:test": "cypress run --spec cypress/e2e/session31.cy.js",
-    "cy:test:edge": "cypress run --spec cypress/e2e/session31.cy.js --browser edge"
+    "cy:test": "cypress run --spec cypress/e2e/session31.cy.js --record",
+    "cy:test:edge": "cypress run --spec cypress/e2e/session31.cy.js --browser edge  --record"
   },
   "keywords": [],
   "author": "",

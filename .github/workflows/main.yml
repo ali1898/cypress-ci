@@ -18,6 +18,9 @@ jobs:
         with:
           browser: chrome
           command: npm run cy:test
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       - name: Upload videos
         if: always()
@@ -47,6 +50,9 @@ jobs:
         with:
           browser: edge
           command: npm run cy:test:edge
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       - name: Upload videos
         if: always()
